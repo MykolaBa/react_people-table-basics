@@ -33,7 +33,7 @@ export const PeoplePage = () => {
   }
 
   if (people.length === 0) {
-    return <div>No people found</div>;
+    return <p data-cy="noPeopleMessage">There are no people</p>;
   }
 
   return (
