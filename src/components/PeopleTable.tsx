@@ -8,7 +8,7 @@ type Props = {
 
 export const PeopleTable = ({ people, slug }: Props) => {
   return (
-    <table className="table">
+    <table className="table" data-cy="peopleTable">
       <thead>
         <tr>
           <th>Name</th>
@@ -32,6 +32,7 @@ export const PeopleTable = ({ people, slug }: Props) => {
           return (
             <tr
               key={person.slug}
+              data-cy="person"
               className={person.slug === slug ? 'has-background-warning' : ''}
             >
               <td>

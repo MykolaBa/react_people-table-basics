@@ -29,7 +29,7 @@ export const PeoplePage = () => {
   }
 
   if (error) {
-    return <div>Something went wrong</div>;
+    return <p data-cy="peopleLoadingError">Something went wrong</p>;
   }
 
   if (people.length === 0) {
